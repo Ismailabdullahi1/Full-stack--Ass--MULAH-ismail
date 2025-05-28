@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULAH - Your Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-text">MULAH</div>
+        </div>
+        <div class="content">
+            <h1 class="display-main-title">Your Registered Details</h1>
+            <div class="details-card">
+                <div class="detail-item">
+                    <span class="detail-label">Phone Number:</span>
+                    <span id="displayPhoneNumber" class="detail-value"></span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Name:</span>
+                    <span id="displayName" class="detail-value"></span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Email:</span>
+                    <span id="displayEmail" class="detail-value"></span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Birthday:</span>
+                    <span id="displayBirthday" class="detail-value"></span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            Powered by <a href="https://www.mulahrewards.com" target="_blank">MulahRewards.com</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const displayPhoneNumber = document.getElementById('displayPhoneNumber');
+            const displayName = document.getElementById('displayName');
+            const displayEmail = document.getElementById('displayEmail');
+            const displayBirthday = document.getElementById('displayBirthday');
+
+            //from localStorage //
+            const phoneNumber = localStorage.getItem('phoneNumber') || 'N/A';
+            const name = localStorage.getItem('name') || 'N/A';
+            const email = localStorage.getItem('email') || 'N/A';
+            const birthday = localStorage.getItem('birthday') || 'N/A';
+
+        
+            displayPhoneNumber.textContent = phoneNumber;
+            displayName.textContent = name;
+            displayEmail.textContent = email;
+            displayBirthday.textContent = birthday;
+        });
+    </script>
+</body>
+</html>
