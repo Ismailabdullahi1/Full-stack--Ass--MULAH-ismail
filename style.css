@@ -42,6 +42,7 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    letter-spacing: 10px;  /* Adjust the value to control the space */
 }
 
 .content {
