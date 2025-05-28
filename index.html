@@ -12,48 +12,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>MULAH - Check Loyalty Points</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="logo-text">MULAH</div>
-        </div>
-        <div class="content">
-            <h1 class="welcome-title">Hello, Welcome !</h1>
-            <p class="sub-title orange-text">Check Your Loyalty Points & Rewards</p>
-
-            <div class="phone-input-group-new">
-                <div class="country-code-wrapper">
-                    <select id="countryCode" class="country-code-select-new">
-                        <option value="+60">+60</option>
-                        <option value="+62">+62</option>
-                    </select>
-                    <i class="fa-solid fa-caret-down country-code-arrow"></i>
-                </div>
-
-                <input type="tel" id="mobileNumber" class="mobile-number-input-new" placeholder="Enter your mobile number" maxlength="15">
-                <i class="fa-solid fa-circle-check"></i>
-            </div>
-
-            <button id="checkLoyaltyPoints" class="action-btn-new">Check Loyalty Points</button>
-        </div>
-        <div class="footer">
-            Powered by <a href="https://mulahrewards.com" target="_blank">MulahRewards.com</a>
-        </div>
+  <div class="container">
+    <div class="header">
+      <div class="logo-image">
+        <img src="Logo.png" alt="MULAH Logo">
+      </div>
     </div>
 
-    <div id="errorModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-icon">!</div>
-            <p id="modalMessage" class="modal-message"></p>
-            <button id="modalBackBtn" class="modal-btn">Back</button>
+    <div class="content">
+      <h1 class="welcome-title">Hello, <br> Welcome !</h1>
+      <p class="sub-title orange-text">Check Your Loyalty Points & Rewards</p>
+
+
+      <div class="phone-input-group-new">
+        <div class="country-code-wrapper">
+          <select id="countryCode" class="country-code-select-new">
+            <option value="+60">+60</option>
+            <option value="+62">+62</option>
+          </select>
+          <i class="fa-solid fa-caret-down country-code-arrow"></i>
         </div>
+
+        <div class="phone-check-group">
+          <input type="tel" id="mobileNumber" class="mobile-number-input-new" placeholder="Enter mobile number" maxlength="15">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+      </div>
+    
+
+      <button id="checkLoyaltyPoints" class="action-btn-new">Check Loyalty Points</button>
     </div>
 
-    <script src="script.js"></script>
+    <div class="footer">
+      Powered by <a href="https://mulahrewards.com" target="_blank">MulahRewards.com</a>
+    </div>
+  </div>
+
+  <div id="errorModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-icon">!</div>
+      <p id="modalMessage" class="modal-message"></p>
+      <button id="modalBackBtn" class="modal-btn">Back</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
