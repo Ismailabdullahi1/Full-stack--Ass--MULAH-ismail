@@ -37,7 +37,7 @@ body {
 }
 
 .logo-text {
-    color: lab(65.34% 48.61 57.92);
+    color: lab(70.21% 35.83 68.02);
     font-size: 60px; 
     font-weight: bold;
     margin-bottom: 20px;
@@ -70,7 +70,7 @@ body {
 }
 
 .sub-title.orange-text {
-    color: #f26522; 
+    color: #fd931a; 
 }
 
 .phone-input-group-new {
@@ -148,7 +148,7 @@ body {
 }
 
 .action-btn-new {
-    background-color: #f26522; 
+    background-color: #f08724; 
     color: white;
     padding: 16px 30px; 
     border: none;
